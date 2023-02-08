@@ -16,3 +16,7 @@ console.log(figlet.textSync('Iti!', {
 // Chalk module in Node.js is the third-party module that is used for styling the format of text and allows us to create our own themes in the node.js project.
 const chalk = require('chalk');
 console.log(chalk.blue('Hello Iti!')); 
+
+
+// you can also use combination of figlet and chalk.
+console.log(chalk.red(figlet.textSync("* Iti")));
