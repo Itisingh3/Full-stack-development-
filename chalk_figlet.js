@@ -20,3 +20,7 @@ console.log(chalk.blue('Hello Iti!'));
 
 // you can also use combination of figlet and chalk.
 console.log(chalk.red(figlet.textSync("* Iti")));
+
+
+// examples
+console.log(chalk.red(figlet.textSync("Let  it  be !  It's  all  good")));
