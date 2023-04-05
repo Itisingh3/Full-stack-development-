@@ -1,0 +1,41 @@
+step 1-- npm install nodemailer
+step 2-- create a js file and named it index.js
+step 3 --write the code below
+step 4---save the file
+step 5--- open the terminal and type "node index.js"
+step 6-- your message will be sent from your user account to your friends account.
+
+
+
+
+
+const nodemailer = require('nodemailer');
+
+  const sender = nodemailer.createTransport({
+   service: 'gmail',
+   host: 'smtp.gmail.com',
+   port: 587,
+   secure: false,
+   requireTLS:true,
+   auth: {
+    user: 'youremail@gmail.com',
+    pass: 'stuvwxyz',
+   },
+  });
+
+  const mailOptions= {
+    from: 'youremail@gmail.com',
+    to: 'xyz.smn@gmail.com,abc@gmail.com,pqrs@gmail.com',
+    subject: 'subject',
+    text:'Hello world'
+  };
+
+  sender.sendMail(mailOptions,  (error, info)=> {
+    if (error) {
+      console.log('Error in sending email  ' + error);
+    
+    } else {
+     console.log('Email sent: ' + info.response);
+    
+    }
+   });
