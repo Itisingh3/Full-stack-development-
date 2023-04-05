@@ -1,8 +1,8 @@
 step 1-- npm install nodemailer
-step 2-- create a js file and named it index.js
-step 3 --write the code below
+step 2-- create a .js file and named it filename.js
+step 3 --write the code given below
 step 4---save the file
-step 5--- open the terminal and type "node index.js"
+step 5--- open the terminal and type "node filename.js"
 step 6-- your message will be sent from your user account to your friends account.
 
 
